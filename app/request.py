@@ -4,13 +4,13 @@ from .models import news
 
 News = news.News
 # Getting api key
-api_key = app.config['NEWS_API_KEY']
+#api_key = app.config['NEWS_API_KEY']
 # Getting the movie base url
 base_url = app.config["NEWS_API_BASE_URL"]
 
 def get_news(category):
 
-    get_news_url = base_url.format(category,api_key)
+    #get_news_url = base_url.format(category,api_key)
 
     with urllib.request.urlopen(get_news_url) as url:
         get_news_data = url.read()
@@ -18,7 +18,7 @@ def get_news(category):
 
         # news_results = None
 
-        if get_news_response['articles']:
+       # if get_news_response['articles']:
             news_results_list = get_news_response['articles']
             news_results = process_results(news_results_list)
 
