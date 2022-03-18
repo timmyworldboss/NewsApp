@@ -41,7 +41,7 @@ def politics():
     # print(trending_news)
     # title = 'Home - Welcome to The best Movie Review Website Online'
     return render_template('politics.html', title = title,politics=political_news)
-
+# if
 
 @app.route('/technology')
 def technology():
