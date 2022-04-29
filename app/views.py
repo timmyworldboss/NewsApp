@@ -13,7 +13,7 @@ def index():
     trending_news = get_news('trending')
     love_news = get_news('love')
     # print(trending_news)
-    title = 'Home - Welcome to The best Movie Review Website Online'
+    title = 'Home - Welcome to The best News Review Website Online'
     return render_template('index.html', title = title,trending = trending_news,love = love_news)
 
 
@@ -27,7 +27,7 @@ def sports():
     entertain_news = get_news('entertainment')
     title = "Sports - Sports news"
     # print(trending_news)
-    title = 'Home - Welcome to The best Movie Review Website Online'
+    title = 'Welcome to The best News review  Website Online'
     return render_template('sports.html', title = title,sports=sport_news,entertainment=entertain_news)
 
 @app.route('/politics')

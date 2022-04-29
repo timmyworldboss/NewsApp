@@ -1,1 +1,4 @@
 .svn
+virtual
+virtual/
+*.pyc
